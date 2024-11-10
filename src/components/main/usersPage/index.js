@@ -55,7 +55,7 @@ const UsersPage = ({ handleQuesUser, searchUser, handleUsersPage }) => {
               // eslint-disable-next-line react/no-unknown-property
             >
               <CardHeader
-                title={u.firstName + " " + u.lastName}
+                title={u.firstName}
                 subheader={"User since " + getFormatedDate(u.joined_on)}
               />
               <CardContent>
@@ -80,7 +80,7 @@ const UsersPage = ({ handleQuesUser, searchUser, handleUsersPage }) => {
                   <div className="tag-container">
                     {u.interests.map((interest, index) => (
                       <div className="tag-name" key={index}>
-                        {interest.name + ","}
+                        {interest.name + "  "}
                       </div>
                     ))}
                   </div>
